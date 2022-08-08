@@ -1,0 +1,23 @@
+.navbar .nav-item {
+    color: #624900;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-item a:hover{
+    color: white;
+}
+
+.navbar .nav-item .nav-link active {
+    color: white;
+}
+
+a.nav-link {
+    text-align: center;
+}
+
+.navbar img {
+    color: #624900;
+    background-image: radial-gradient(rgba(255,255,0,0.5) 0%, rgba(255,193,7,1) 70%);
+}
+

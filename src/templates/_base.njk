@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="index.css" />
-        <title>{% block title %}{% endblock %}</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="index.css"/>
+        <title>
+            {% block title %}EKO-INFO ekologické poradenství s.r.o.{% endblock %}
+        </title>
     </head>
     <body>
+        <header>
+            <nav class="navbar bg-warning mb-3 pt-4 pb-4">
+                <div class="container flex-column flex-md-row px-0">
+                    <a class="navbar-brand me-4 pt-0" href="/">
+                        <img src="/svg/logo.svg" alt="EKO-INFO Owl logo" width="80px" height="80px"/>
+                    </a>
+                    <ul class="navbar-nav flex-row gap-sm-4">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" href="/">Úvod</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/poradenska-a-skolici-cinnost">Poradenská a školící činnost</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/aktualni-nabidka">Aktuální nabídka</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/kontakty">Kontakty</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         {% block content %}{% endblock %}
+        <footer class="bg-warning mt-3 p-3">
+            <div class="hstack gap-3">
+                <div class="bg-warning">&copy;Eshadesign</div>
+                <div class="bg-warning ms-auto">
+                    <a class="nav-link" aria-current="page" href="/">Úvod</a>
+                </div>
+                <div class="vr"></div>
+                <div class="bg-warning">
+                    <a class="nav-link" href="/poradenska-a-skolici-cinnost">Poradenská a školící činnost</a>
+                </div>
+                <div class="vr"></div>
+                <div class="bg-warning">
+                    <a class="nav-link" href="/aktualni-nabidka">Aktuální nabídka</a>
+                </div>
+                <div class="vr"></div>
+                <div class="bg-warning">
+                    <a class="nav-link" href="/kontakty">Kontakty</a>
+                </div>
+            </div>
+        </footer>
         {#
         <!-- Optional JavaScript -->
         <!-- Bootstrap JS first and your own script at the end -->
